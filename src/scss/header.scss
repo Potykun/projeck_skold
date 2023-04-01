@@ -1,20 +1,111 @@
 //====================================================================================================
+.header {
+
+	// .header__container
+
+	&__container {}
+
+	// .header__top
+
+	&__top {
+		display: flex;
+		align-items: center;
+		height: rem(36);
+		background-color: $ColorYellow;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+	}
+
+	// .header__bottom
+
+	&__bottom {}
+}
+
+.bottom-header {
+	display: flex;
+	height: 100%;
+	align-items: center;
+
+	// .bottom-header__logo
+
+	&__logo {
+		// min-height: 100%;
+		padding: rem(25) rem(32);
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+	}
+
+	// .bottom-header__menu
+
+	&__menu {
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+	}
+
+	// .bottom-header__cart
+
+	&__cart {}
+
+	// .bottom-header__get
+
+	&__get {}
+}
+
+.menu {
+	display: flex;
+	justify-content: end;
+	flex: 1 1 auto;
+
+	// .menu__icon
+
+	&__icon {}
+
+	// .menu__body
+
+	&__body {}
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: rem(30);
+	}
+
+	// .menu__item
+
+	&__item {
+		display: flex;
+		align-items: center;
+		min-height: rem(68);
+	}
+
+	// .menu__link
+
+	&__link {}
+}
+
+.icon-menu {}
+
+.link-sub {}
 
 //====================================================================================================
 
 //Burger
-/*
 .icon-menu {
 	display: none;
+
 	@media (max-width: $mobile) {
 		display: block;
 		position: relative;
 		width: rem(30);
 		height: rem(18);
 		z-index: 5;
+
 		@media (any-hover: none) {
 			cursor: default;
 		}
+
 		span,
 		&::before,
 		&::after {
@@ -26,26 +117,32 @@
 			height: rem(2);
 			background-color: #000;
 		}
+
 		&::before {
 			top: 0;
 		}
+
 		&::after {
 			bottom: 0;
 		}
+
 		span {
 			top: calc(50% - rem(1));
 		}
+
 		.menu-open & {
 			span {
 				width: 0;
 			}
+
 			&::before,
-			&::after {
-			}
+			&::after {}
+
 			&::before {
 				top: calc(50% - rem(1));
 				transform: rotate(-45deg);
 			}
+
 			&::after {
 				bottom: calc(50% - rem(1));
 				transform: rotate(45deg);
@@ -53,4 +150,3 @@
 		}
 	}
 }
-*/
