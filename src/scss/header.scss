@@ -1,5 +1,11 @@
 //====================================================================================================
 .header {
+	font-family: Roboto Mono;
+	font-size: rem(13);
+	line-height: math.div(14, 13);
+	letter-spacing: rem(1);
+	text-transform: uppercase;
+	white-space: nowrap;
 
 	// .header__container
 
@@ -23,16 +29,18 @@
 
 .bottom-header {
 	display: flex;
-	height: 100%;
 	align-items: center;
 
 	// .bottom-header__logo
 
 	&__logo {
-		// min-height: 100%;
 		padding: rem(25) rem(32);
 		border-right: 1px solid #000;
 		border-bottom: 1px solid #000;
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	// .bottom-header__menu
@@ -44,17 +52,37 @@
 
 	// .bottom-header__cart
 
-	&__cart {}
+	&__cart {
+
+		display: flex;
+		padding: rem(26.5) rem(30);
+		align-items: center;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+
+	}
 
 	// .bottom-header__get
 
-	&__get {}
+	&__get {
+
+
+		display: flex;
+		align-items: center;
+		color: #fff;
+		background-color: #111;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		white-space: nowrap;
+		padding: rem(26.5) rem(25);
+	}
 }
 
 .menu {
 	display: flex;
 	justify-content: end;
 	flex: 1 1 auto;
+	padding-right: rem(30);
 
 	// .menu__icon
 
@@ -74,20 +102,86 @@
 
 	// .menu__item
 
-	&__item {
-		display: flex;
-		align-items: center;
-		min-height: rem(68);
-	}
+	&__item {}
 
 	// .menu__link
 
-	&__link {}
+	&__link {
+		display: flex;
+		padding: rem(26.5) 0;
+
+		span {
+			content: '';
+			background-image: url(img/arrow.svg);
+			background-repeat: no-repeat;
+			background-position: rem(0) rem(7);
+			width: rem(8);
+			height: rem(15);
+			bottom: 0;
+		}
+	}
 }
 
 .icon-menu {}
 
-.link-sub {}
+
+.link-sub {
+
+	position: absolute;
+	opacity: 0;
+
+	&.hover {
+
+		opacity: 1;
+	}
+
+
+
+	// .link-sub__top
+
+	&__top {}
+
+	// .link-sub__bottom
+
+	&__bottom {}
+}
+
+.top-list {
+
+	// .top-list__pages
+
+	&__pages {}
+
+	// .top-list__sms
+
+	&__sms {}
+
+	// .top-list__utility
+
+	&__utility {}
+}
+
+
+
+.pages {
+
+	// .pages__title
+
+	&__title {}
+
+	// .pages__list
+
+	&__list {}
+
+	// .pages__item
+
+	&__item {}
+
+	// .pages__link
+
+	&__link {}
+}
+
 
 //====================================================================================================
 
