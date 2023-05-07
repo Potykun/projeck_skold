@@ -14,28 +14,15 @@ openMenu.onclick = () => {
 //=================== infinity running string  ==================
 
 let InfStr = document.querySelector('[data-infinText]');
-console.dir(InfStr);
 
 
 
-console.log('dfdf');
-function infinityString() {
-	let widhElem = InfStr.offsetWidth;
-	let k = InfStr.offsetWidth;
-	let i = 0;
-	let cloneElement = InfStr.CloneNode(true);
-
-	while (k < window.innerWidth) {
-		console.log(i);
-		k = k + 400;
-		i += 1;
-		console.log(k);
-		console.log(window.innerWidth);
-		console.log(cloneElement);
-		console.log('dfdf');
-		InfStr.parentNode.prepend(cloneElement);
+function infSring(str) {
+	while ((str.clientWidth * 2) < window.innerWidth) {
+		// console.dir(str.textContent);
+		str.innerHTML += str.textContent;
+		// console.log(str.clientWidth);
 	}
-
-
+	str.after(str.cloneNode(true))
 }
-infinityString();
+infSring(InfStr);

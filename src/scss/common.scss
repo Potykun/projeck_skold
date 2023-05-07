@@ -1,1 +1,23 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.text {
+	font-size: rem(16);
+	line-height: math.div(40, 22);
+	font-weight: 300;
+}
+
+.headerTitle {
+	font-size: rem(96);
+	line-height: math.div(106, 96);
+
+	&_2 {
+		font-size: rem(80);
+		line-height: math.div(88, 80);
+	}
+
+	&_3 {
+		font-size: rem(32);
+		line-height: math.div(38, 32);
+		text-transform: uppercase;
+		letter-spacing: rem(1);
+	}
+}

@@ -1,15 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="mainPage">
+				<div class="mainPage__container">
+					<div class="mainPage__left">
+						<img src="img/main-produckt.jpg" alt="product">
+					</div>
+					<div class="mainPage__right">
+						<div class="mainPage__right-content right-content">
+							<div class="right-content__chapterImg">
+								<img src="img/main/x-chapter.png" alt="chapter">
+							</div>
+							<div class="right-content__title headerTitle">
+								<h1>Creating unique brands.</h1>
+							</div>
+							<div class="right-content__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+							</div>
+						</div>
+						<div class="mainPage__right-scroll">
+							<p>SCroll Down</p>
+							<img src="img/arrow-dawn.svg" alt="arrow">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="brands">
+				<div class="brands__container">
+					<div class="brands__description">
+						<p>Brands I’ve worked with</p>
+					</div>
+					<ul class="brands__list">
+						<li class="brands__items"><img src="img/label/invivsion.png" alt="invivsion"></li>
+						<li class="brands__items"><img src="img/label/vision_studio.png" alt="vision_studio"></li>
+						<li class="brands__items"><img src="img/label/soperfood.png" alt="superfood"></li>
+						<li class="brands__items"><img src="img/label/creativstudio.png" alt="creativstudio"></li>
+						<li class="brands__items"><img src="img/label/inmotion.png" alt="inmotion"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="brandServices">
+				<div class="brandServices__container">
+					<div class="brandServices__left leftBrandServices">
+						<div class="leftBrandServices__sliky">
+							<div class="leftBrandServices__label">Services</div>
+							<h2 class="leftBrandServices__title headerTitle_2">Branding Services</h2>
+							<p class="leftBrandServices__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt.
+							</p>
+						</div>
+					</div>
+					<ul class="brandServices__right rightBrandServices">
+						<li class="rightBrandServices__item itemBrand">
+							<div class="itemBrand__image">
+								<img src="img/main/x-chapter.png" alt="x-chapter">
+							</div>
+							<div class="itemBrand__info">
+								<h3 class="itemBrand__title headerTitle_3">Brand Strategy</h3>
+								<p class="itemBrand__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna
+									aliqua.</p>
+								<a href="#" class="itemBrand__link">More Information</a>
+							</div>
+						</li>
+						<li class="rightBrandServices__item itemBrand">
+							<div class="itemBrand__image">
+								<img src="img/main/piramid-chapter.png" alt="piramid-chapter">
+							</div>
+							<div class="itemBrand__info">
+								<h3 class="itemBrand__title headerTitle_3">Brand design</h3>
+								<p class="itemBrand__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna
+									aliqua.</p>
+								<a href="#" class="itemBrand__link">More Information</a>
+							</div>
+						</li>
+						<li class="rightBrandServices__item itemBrand">
+							<div class="itemBrand__image">
+								<img src="img/main/umbrella-chapter.png" alt="umbrella-chapter">
+							</div>
+							<div class="itemBrand__info">
+								<h3 class="itemBrand__title headerTitle_3">Graphic Design</h3>
+								<p class="itemBrand__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna
+									aliqua.</p>
+								<a href="#" class="itemBrand__link">More Information</a>
+							</div>
+						</li>
+						<li class="rightBrandServices__item itemBrand">
+							<div class="itemBrand__image">
+								<img src="img/main/roound-chapter.png" alt="roound-chapter">
+							</div>
+							<div class="itemBrand__info">
+								<h3 class="itemBrand__title headerTitle_3">Monthly Support</h3>
+								<p class="itemBrand__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna
+									aliqua.</p>
+								<a href="#" class="itemBrand__link">More Information</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="select-work">
+				<div class="select-work__container">
+					<div class="select-work__scroll-world scroll-world">Selected Work</div>
+					<ul class="select-work__images-list">
+						<li class="select-work__image-item">
+							<a class="select-work__item-link" href="#">
+								<img src="img/select-work/work-1.jpg" alt="work-1">
+							</a>
+						</li>
+						<li class="select-work__image-item">
+							<a class="select-work__item-link" href="#">
+								<img src="img/select-work/work-2.jpg" alt="work-2">
+							</a>
+						</li>
+						<li class="select-work__image-item">
+							<a class="select-work__item-link" href="#">
+								<img src="img/select-work/work-3.jpg" alt="work-3">
+							</a>
+						</li>
+						<li class="select-work__image-item">
+							<a class="select-work__item-link" href="#">
+								<img src="img/select-work/work-4.jpg" alt="work-4">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="process">
+				<div class="process__container">
+					<div class="process__scroll-world scroll-world">
+						Process
+					</div>
+					<div class="process__image">
+						<img src="img/process/image-process1.jpg" alt="image-process1">
+					</div>
+					<div class="process__head">
+						<div class="process__head-label"><img src="img/main/roound-chapter.png" alt="roound-chapter">
+						</div>
+						<h2 class="process__head-title">Your brand in 4 steps.</h2>
+						<p class="process__head-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore.</p>
+					</div>
+					<ul class="process__list">
+						<li class="process__item item-pocess">
+							<div class="item-pocess__head">
+								<div class="item-pocess__head-title">Discovery Call</div>
+								<div class="item-pocess__arrow"><img src="img/arrow-dawn.svg" alt="arrow-down"></div>
+							</div>
+							<div class="item-pocess__content content">
+								<div class="content__num">01</div>
+								<div class="content__descriotion">
+									<h3 class="content__title">Let’s see if we click</h3>
+									<p class="content__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Turpis egestas sed tempus urna. Porta nibh venenatis cras sed felis eget velit
+										aliquet sagittis.</p>
+									<ul class="text-list">
+										<li class="text-item">
+											<p>Lorem ipsum</p>
+										</li>
+										<li class="text-item">
+											<p>Turpis egestas sed</p>
+										</li>
+										<li class="text-item">
+											<p>Porta nibh venenatis cras</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="process__item item-pocess">
+							<div class="item-pocess__head">
+								<div class="item-pocess__head-title">Concept</div>
+								<div class="item-pocess__arrow"><img src="img/arrow-dawn.svg" alt="arrow-down"></div>
+							</div>
+							<div class="item-pocess__content content">
+								<div class="content__num">02</div>
+								<div class="content__descriotion">
+									<h3 class="content__title">we need a strategy</h3>
+									<p class="content__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Turpis egestas sed tempus urna. Porta nibh venenatis cras sed felis eget velit
+										aliquet sagittis.</p>
+									<ul class="text-list">
+										<li class="text-item">
+											<p>Lorem ipsum</p>
+										</li>
+										<li class="text-item">
+											<p>Turpis egestas sed</p>
+										</li>
+										<li class="text-item">
+											<p>Porta nibh venenatis cras</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="process__item item-pocess">
+							<div class="item-pocess__head">
+								<div class="item-pocess__head-title">Discovery Call</div>
+								<div class="item-pocess__arrow"><img src="img/arrow-dawn.svg" alt="arrow-down"></div>
+							</div>
+							<div class="item-pocess__content content">
+								<div class="content__num">03</div>
+								<div class="content__descriotion">
+									<h3 class="content__title">Let the magic happen</h3>
+									<p class="content__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Turpis egestas sed tempus urna. Porta nibh venenatis cras sed felis eget velit
+										aliquet sagittis.</p>
+									<ul class="text-list">
+										<li class="text-item">
+											<p>Lorem ipsum</p>
+										</li>
+										<li class="text-item">
+											<p>Turpis egestas sed</p>
+										</li>
+										<li class="text-item">
+											<p>Porta nibh venenatis cras</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="process__item item-pocess">
+							<div class="item-pocess__head">
+								<div class="item-pocess__head-title">Discovery Call</div>
+								<div class="item-pocess__arrow"><img src="img/arrow-dawn.svg" alt="arrow-down"></div>
+							</div>
+							<div class="item-pocess__content content">
+								<div class="content__num">04</div>
+								<div class="content__descriotion">
+									<h3 class="content__title">Ready to rock</h3>
+									<p class="content__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Turpis egestas sed tempus urna. Porta nibh venenatis cras sed felis eget velit
+										aliquet sagittis.</p>
+									<ul class="text-list">
+										<li class="text-item">
+											<p>Lorem ipsum</p>
+										</li>
+										<li class="text-item">
+											<p>Turpis egestas sed</p>
+										</li>
+										<li class="text-item">
+											<p>Porta nibh venenatis cras</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="item-pocess__btn">Get in touch</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

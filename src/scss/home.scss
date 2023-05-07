@@ -1,4 +1,283 @@
 //====================================================================================================
+.mainPage {
 
 
-//====================================================================================================
+	// .mainPage__container
+
+	&__container {
+		display: flex;
+		border-bottom: 1px solid #000;
+	}
+
+	// .mainPage__left
+
+	&__left {
+		border-right: 1px solid #000;
+		flex: 0 1 50%;
+		position: relative;
+		min-height: rem(850);
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	// .mainPage__right
+
+	&__right {
+		flex: 1 1 50%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .mainPage__right-content
+
+	&__right-content {
+		flex: 1 1 auto;
+	}
+
+	// .mainPage__right-scroll
+
+	&__right-scroll {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid #000;
+		padding: rem(15);
+
+		p {
+			text-transform: uppercase;
+			font-family: 'Roboto Mono';
+			font-size: rem(13);
+			line-height: math.div(18, 13);
+		}
+	}
+}
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	padding: rem(60);
+
+
+
+	// .right-content__chapterImg
+
+	&__chapterImg {
+		flex: 1 1 auto;
+	}
+
+	// .right-content__title
+
+	&__title {
+		padding-bottom: rem(15);
+
+		h1 {
+
+
+			max-width: rem(400);
+		}
+	}
+
+	// .right-content__text
+
+	&__text {
+		font-size: rem(22);
+	}
+}
+
+//=================== brands ==================
+
+.brands {
+	min-height: 100%;
+	// .brands__container
+
+	&__container {
+		display: flex;
+		border-bottom: 1px solid #000;
+		align-items: center;
+
+	}
+
+	// .brands__description
+
+	&__description {
+		border-right: 1px solid #000;
+		padding: rem(50) rem(100);
+	}
+
+	// .brands__list
+
+	&__list {
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	// .brands__items
+
+	&__items {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//=================== services ==================
+.brandServices {
+
+	// .brandServices__container
+
+	&__container {
+		display: flex;
+	}
+
+	// .brandServices__left
+
+	&__left {
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		padding: rem(60);
+		flex: 0 1 50%;
+
+	}
+
+	// .brandServices__right
+
+	&__right {
+		flex: 0 1 50%;
+	}
+}
+
+.leftBrandServices {
+
+	// .leftBrandServices__sliky
+
+	&__sliky {
+		position: sticky;
+		top: 0;
+	}
+
+	// .leftBrandServices__label
+
+	&__label {}
+
+	// .leftBrandServices__title
+
+	&__title {}
+
+	// .leftBrandServices__text
+
+	&__text {
+		font-size: rem(22);
+		line-height: math.div(40, 22);
+	}
+}
+
+.rightBrandServices {
+
+	// .rightBrandServices__item
+
+	&__item {
+		display: flex;
+		padding: rem(50);
+		border-bottom: 1px solid #000;
+		// position: sticky;
+	}
+}
+
+.itemBrand {
+
+	// .itemBrand__image
+
+	&__image {
+		flex: 0 1 35%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+
+
+		img {
+			// display: block;
+			max-width: 35%;
+		}
+	}
+
+	// .itemBrand__info
+
+	&__info {}
+
+	// .itemBrand__title
+
+	&__title {
+		margin-bottom: rem(10);
+	}
+
+	// .itemBrand__text
+
+	&__text {
+		margin-bottom: rem(25);
+	}
+
+	// .itemBrand__link
+
+	&__link {
+		text-transform: uppercase;
+		font-size: rem(13);
+		line-height: math.div(16, 13);
+		letter-spacing: rem(1);
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: rem(1);
+			bottom: -10%;
+			left: 0;
+			background-color: $mainColor;
+		}
+	}
+}
+
+//=================== select-wor ==================
+
+.select-work {
+
+	// .select-work__container
+
+	&__container {}
+
+	// .select-work__scroll-world
+
+	&__scroll-world {
+		padding: rem(40) 0;
+		// border-top: rem(1) solid #000;
+		border-bottom: rem(1) solid #000;
+		font-family: 'Inter';
+		font-size: rem(65);
+		line-height: math.div(68, 65);
+		letter-spacing: rem(1);
+		text-transform: uppercase;
+	}
+
+	// .select-work__images-list
+
+	&__images-list {}
+
+	// .select-work__image-item
+
+	&__image-item {}
+
+	// .select-work__item-link
+
+	&__item-link {}
+}
+
+.scroll-world {}
