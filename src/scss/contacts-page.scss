@@ -1,0 +1,108 @@
+.contacts {
+   // .contacts__container
+
+   &__container {
+      display: flex;
+      @media (max-width: $tablet) {
+         flex-direction: column;
+      }
+      & > :nth-child(n) {
+         padding: rem(48);
+         @media (max-width: $tablet) {
+            padding: rem(32);
+         }
+      }
+   }
+
+   // .contacts__left
+
+   &__left {
+      flex: 0 1 50%;
+      border-right: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: rem(16);
+      @media (max-width: $tablet) {
+         border-right: 0px solid #000;
+         border-bottom: 1px solid #000;
+      }
+
+      p {
+         font-family: "roboto mono";
+         text-transform: uppercase;
+         font-size: rem(13);
+         line-height: math.div(18, 13);
+         letter-spacing: 1px;
+      }
+      h2 {
+         font-size: rem(70);
+         line-height: math.div(78, 70);
+         @media (max-width: $tablet) {
+            max-width: rem(350);
+         }
+         @media (max-width: $mobile) {
+            font-size: rem(48);
+            line-height: math.div(56, 48);
+         }
+      }
+   }
+
+   // .contacts__form
+
+   &__form {
+      flex: 0 1 50%;
+   }
+}
+.contact-form {
+   // .contact-form__name
+   display: flex;
+   flex-direction: column;
+   gap: rem(32);
+
+   &__name {
+   }
+
+   // .contact-form__label
+
+   &__label {
+      font-family: "roboto mono";
+      text-transform: uppercase;
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      letter-spacing: 1px;
+      margin-bottom: rem(8);
+   }
+
+   // .contact-form__email
+
+   &__email {
+   }
+
+   // .contact-form__message
+
+   &__message {
+      textarea {
+         min-height: rem(160);
+      }
+   }
+   &__button {
+      background-color: #000;
+      color: #fff;
+      padding: rem(20) rem(24);
+      text-transform: uppercase;
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      letter-spacing: 1px;
+      font-family: "roboto mono";
+   }
+}
+.input {
+   background-color: #f3f3f3;
+   width: 100%;
+   border: 1px solid #000;
+   min-height: rem(64);
+   padding: rem(16);
+}
+.button {
+}

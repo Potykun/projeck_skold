@@ -1,0 +1,227 @@
+.blog {
+   // .blog__container
+
+   &__container {
+      display: flex;
+      border-bottom: 1px solid #000;
+      @media (max-width: $mobileSmall) {
+         flex-direction: column;
+      }
+   }
+
+   // .blog__aside
+
+   &__aside {
+      flex: 0 1 25%;
+   }
+
+   // .blog__list
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      row-gap: rem(1);
+      background-color: #000;
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(2, auto);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(1, auto);
+      }
+   }
+
+   // .blog__item
+
+   &__item {
+      flex: 1 1 33%;
+      border-right: 1px solid #000;
+      background-color: #fff;
+   }
+}
+.blog-aside {
+   border-right: 1px solid #000;
+   // .blog-aside__head
+
+   &__head {
+      padding: rem(32);
+      font-family: "manrope";
+      text-transform: uppercase;
+      font-size: rem(32);
+      line-height: math.div(38, 32);
+      letter-spacing: rem(1);
+      border-bottom: 1px solid #000;
+   }
+
+   // .blog-aside__list
+
+   &__list {
+      position: sticky;
+      top: 0;
+   }
+
+   // .blog-aside__item
+
+   &__item {
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      font-family: "roboto mono";
+      text-transform: uppercase;
+      // overflow: hidden;
+      &:not(:last-child) {
+         border-bottom: 1px solid #000;
+      }
+      &:last-child {
+         position: relative;
+         &::after {
+            content: "";
+            position: absolute;
+            background-color: #000;
+            width: 100%;
+            height: 1px;
+            bottom: -1px;
+            left: 0;
+         }
+      }
+      a {
+         display: block;
+         padding: rem(18);
+      }
+   }
+
+   // .blog-aside__item--cat
+
+   &__item--cat {
+      padding: rem(16);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $ColorGrey;
+      margin-right: rem(1);
+   }
+}
+.item-blog {
+   overflow: hidden;
+   // .item-blog__image
+
+   &__image {
+      img {
+         max-width: 100%;
+         min-height: rem(300);
+         object-fit: cover;
+      }
+   }
+
+   // .item-blog__content
+
+   &__content {
+      border-top: 1px solid #000;
+      padding: rem(32);
+      a {
+         letter-spacing: rem(1);
+         font-size: rem(15);
+         line-height: math.div(21, 15);
+         font-family: "roboto mono";
+         text-transform: uppercase;
+      }
+      p {
+         font-family: "manrope";
+         font-size: rem(14);
+         line-height: math.div(25, 14);
+         font-weight: 300;
+         color: #777;
+      }
+   }
+}
+//=================== letter ===================
+
+.project-page-letter {
+}
+.letter {
+   // .letter__container
+
+   &__container {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #000;
+      @media (max-width: $tablet) {
+         flex-direction: column;
+         align-items: start;
+      }
+   }
+
+   // .letter__content
+
+   &__content {
+      flex: 0 1 50%;
+      padding: rem(48);
+      @media (max-width: $tablet) {
+         padding: rem(32);
+      }
+   }
+
+   // .letter__content-label
+
+   &__content-label {
+      margin-bottom: rem(16);
+   }
+
+   // .letter__content-head
+
+   &__content-head {
+      max-width: rem(500);
+   }
+
+   // .letter__form
+
+   &__form {
+      display: flex;
+      flex: 1 1 auto;
+      padding: rem(48);
+      @media (max-width: $tablet) {
+         width: 100%;
+      }
+      @media (max-width: $mobileSmall) {
+         flex-direction: column;
+         input {
+            margin-bottom: rem(16);
+         }
+         button {
+            display: flex;
+            justify-content: center;
+         }
+      }
+      input {
+         flex: 1 1 auto;
+         padding: rem(16);
+         min-height: rem(64);
+         border: 1px solid #000;
+
+         &::placeholder {
+            font-family: "roboto mono";
+            font-size: rem(16);
+            line-height: math.div(24, 16);
+         }
+         &:focus-visible {
+            outline: none;
+         }
+      }
+      button {
+         text-transform: uppercase;
+         font-family: "roboto mono";
+         font-size: rem(13);
+         letter-spacing: 1px;
+         display: flex;
+         padding: rem(20) rem(24);
+         background-color: #000;
+         color: #fff;
+      }
+   }
+}
+.label {
+}
+.headerTitle {
+   // .headerTitle_2
+
+   &_2 {
+   }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('html/_head.htm',{ "title":"Shop" })
+
+   <body>
+      <div class="wrapper">
+         @@include('html/_header.htm',{})
+         <main class="page">
+            <section class="blog">
+               <div class="blog__container">
+                  <aside class="blog__aside blog-aside">
+                     <div class="blog-aside__head">Shop</div>
+                     <ul class="blog-aside__list">
+                        <li class="blog-aside__item blog-aside__item--cat">
+                           <span>Categories</span>
+                           <img src="@img/arrow-dawn.svg" alt="arrow-dawn" />
+                        </li>
+                        <li class="blog-aside__item">
+                           <a href="#"><span>Branding</span></a>
+                        </li>
+                        <li class="blog-aside__item">
+                           <a href="#"><span>Magazine</span></a>
+                        </li>
+                     </ul>
+                  </aside>
+                  <ul class="blog__list">
+                     <li class="blog__item item-shop">
+                        <a href="/shop-item6.html">
+                           <div class="item-shop__image item-shop__image--sale"><img src="@img/shop/shop6.webp" alt="sop6" /></div>
+                           <div class="item-shop__describe">
+                              <div class="item-shop__price">
+                                 <div class="item-shop__price--new">$ <span>29.00</span> USD</div>
+                                 <div class="item-shop__price--old">$ <span>40.00</span> USD</div>
+                              </div>
+                              <div class="item-shop__text">Brand Magazine #6</div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="blog__item item-shop">
+                        <a href="/shop-item5.html">
+                           <div class="item-shop__image"><img src="@img/shop/shop5.webp" alt="sop5" /></div>
+                           <div class="item-shop__describe">
+                              <div class="item-shop__price">
+                                 <div class="item-shop__price--new">$ <span>29.00</span> USD</div>
+                                 <div class="item-shop__price--old">$ <span>40.00</span> USD</div>
+                              </div>
+                              <div class="item-shop__text">Brand Magazine #5</div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="blog__item item-shop">
+                        <a href="/shop-item4.html">
+                           <div class="item-shop__image"><img src="@img/shop/shop4.webp" alt="sop4" /></div>
+                           <div class="item-shop__describe">
+                              <div class="item-shop__price">
+                                 <div class="item-shop__price--new">$ <span>29.00</span> USD</div>
+                                 <div class="item-shop__price--old">$ <span>40.00</span> USD</div>
+                              </div>
+                              <div class="item-shop__text">Brand Magazine #4</div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="blog__item item-shop">
+                        <a href="/shop-item3.html">
+                           <div class="item-shop__image"><img src="@img/shop/shop3.webp" alt="sop3" /></div>
+                           <div class="item-shop__describe">
+                              <div class="item-shop__price">
+                                 <div class="item-shop__price--new">$ <span>29.00</span> USD</div>
+                                 <div class="item-shop__price--old">$ <span>40.00</span> USD</div>
+                              </div>
+                              <div class="item-shop__text">Brand Magazine #3</div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="blog__item item-shop">
+                        <a href="/shop-item2.html">
+                           <div class="item-shop__image"><img src="@img/shop/shop2.webp" alt="sop2" /></div>
+                           <div class="item-shop__describe">
+                              <div class="item-shop__price">
+                                 <div class="item-shop__price--new">$ <span>29.00</span> USD</div>
+                                 <div class="item-shop__price--old">$ <span>40.00</span> USD</div>
+                              </div>
+                              <div class="item-shop__text">Brand Magazine #2</div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="blog__item item-shop">
+                        <a href="/shop-item1.html">
+                           <div class="item-shop__image"><img src="@img/shop/shop1.webp" alt="sop1" /></div>
+                           <div class="item-shop__describe">
+                              <div class="item-shop__price">
+                                 <div class="item-shop__price--new">$ <span>29.00</span> USD</div>
+                                 <div class="item-shop__price--old">$ <span>40.00</span> USD</div>
+                              </div>
+                              <div class="item-shop__text">Brand Magazine #1</div>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <section class="project-page-letter letter">
+               <div class="letter__container">
+                  <div class="letter__content">
+                     <div class="letter__content-label label">newsletter</div>
+                     <h2 class="letter__content-head headerTitle_2">Get the latest news into your inbox</h2>
+                  </div>
+                  <form action="submit" class="letter__form">
+                     <input type="email" placeholder="Your email" />
+                     <button>subscribe</button>
+                  </form>
+               </div>
+            </section>
+         </main>
+         @@include('html/_footer.htm',{})
+      </div>
+      @@include('html/_js.htm',{})
+   </body>
+</html>

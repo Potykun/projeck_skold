@@ -1,0 +1,201 @@
+.magazine {
+   // .magazine__container
+
+   &__container {
+      display: flex;
+      border-bottom: 1px solid #000;
+   }
+
+   // .magazine__image
+
+   &__image {
+      flex: 0 1 50%;
+      border-right: 1px solid #000;
+      & > :first-child {
+         border-bottom: 1px solid #000;
+      }
+      img {
+         min-height: 50%;
+         max-width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   // .magazine__description
+
+   &__description {
+      flex: 0 1 50%;
+   }
+}
+.description-magazine {
+   // .description-magazine__cnt
+   &__cnt {
+      padding: rem(48);
+      position: sticky;
+      top: 0;
+   }
+   // .description-magazine__price
+
+   &__price {
+      display: flex;
+      gap: rem(32);
+      font-family: "roboto mono";
+      font-size: rem(13);
+      line-height: math.div(17, 13);
+      margin-bottom: rem(13);
+      span {
+         display: none;
+      }
+   }
+
+   // .description-magazine__price--sale
+
+   &__price--sale {
+      span {
+         display: block;
+         text-decoration: line-through;
+      }
+   }
+
+   // .description-magazine__header
+
+   &__header {
+      font-size: rem(66);
+      line-height: math.div(72, 66);
+      margin-bottom: rem(16);
+   }
+
+   // .description-magazine__descript
+
+   &__descript {
+      margin-bottom: rem(48);
+      font-size: rem(18);
+      line-height: math.div(32, 18);
+      font-weight: 300;
+   }
+
+   // .description-magazine__inp
+
+   &__inp {
+      border: 1px solid #000;
+      width: rem(100);
+      padding: rem(20);
+      background-color: #f8f8f8;
+      margin-bottom: rem(16);
+      &:focus-visible {
+         outline: none;
+      }
+   }
+
+   // .description-magazine__button
+
+   &__button {
+      background-color: #000;
+      color: #fff;
+      padding: rem(20) rem(24);
+      max-width: rem(150);
+      margin-bottom: rem(32);
+   }
+
+   // .description-magazine__content
+
+   &__content {
+      h2 {
+         margin-bottom: rem(32);
+         font-size: rem(32);
+         line-height: math.div(38, 32);
+      }
+      p {
+         font-size: rem(16);
+         line-height: math.div(28, 16);
+         font-weight: 300;
+         margin-bottom: rem(16);
+      }
+      ul {
+         li {
+            padding-left: rem(16);
+            position: relative;
+            font-weight: 300;
+            margin-bottom: rem(16);
+            &::before {
+               content: "";
+               position: absolute;
+               width: rem(5);
+               height: rem(5);
+               top: 50%;
+               left: 0;
+               border-radius: 50%;
+               background-color: #000;
+               transform: translateY(-50%);
+            }
+         }
+      }
+   }
+}
+
+//===================  ===================
+.faq {
+   // .faq__container
+
+   &__container {
+      display: flex;
+      border-bottom: 1px solid #000;
+   }
+
+   // .faq__label
+
+   &__label {
+      padding: rem(48);
+      flex: 0 1 50%;
+      border-right: 1px solid #000;
+      div {
+         margin-bottom: rem(16);
+         font-size: rem(13);
+         line-height: math.div(18, 13);
+         text-transform: uppercase;
+         letter-spacing: rem(1);
+         font-family: "roboto mono";
+      }
+      h3 {
+         font-size: rem(48);
+         line-height: math.div(52, 48);
+         text-transform: uppercase;
+         max-width: rem(300);
+      }
+   }
+
+   // .faq__spoilers-cnt
+
+   &__spoilers-cnt {
+      flex: 0 1 50%;
+      display: flex;
+      flex-direction: column;
+   }
+}
+.spollers {
+   display: flex;
+   flex-direction: column;
+   // .spollers__title
+   &:not(:last-child) {
+      border-bottom: 1px solid #000;
+      margin-bottom: rem(1);
+   }
+
+   &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(16);
+      background-color: #f8f8f8;
+   }
+
+   // .spollers__body
+
+   &__body {
+      padding: rem(32);
+      border-top: solid 1px #000;
+      font-size: rem(16);
+      line-height: math.div(28, 16);
+      font-weight: 300;
+   }
+}

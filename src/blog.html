@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('html/_head.htm',{ "title":"Blog" })
+
+   <body>
+      <div class="wrapper">
+         @@include('html/_header.htm',{})
+         <main class="page">
+            <section class="blog">
+               <div class="blog__container">
+                  <aside class="blog__aside blog-aside">
+                     <div class="blog-aside__head">Blog</div>
+                     <ul class="blog-aside__list">
+                        <li class="blog-aside__item blog-aside__item--cat">
+                           <span>Categories</span>
+                           <img src="@img/arrow-dawn.svg" alt="arrow-dawn" />
+                        </li>
+                        <li class="blog-aside__item">
+                           <a href="#"><span>Brands</span></a>
+                        </li>
+                        <li class="blog-aside__item">
+                           <a href="#"><span>Design</span></a>
+                        </li>
+                        <li class="blog-aside__item">
+                           <a href="#"><span>video</span></a>
+                        </li>
+                     </ul>
+                  </aside>
+                  <ul class="blog__list">
+                     <li class="blog__item item-blog">
+                        <a href="/blog-item1.html" class="item-blog__image">
+                           <img src="@img/blog/blog1.webp" alt="blog1" />
+                        </a>
+                        <div class="item-blog__content">
+                           <a href="/blog-item1.html">
+                              <h3>Things to Look for When Comparing Branding</h3>
+                           </a>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore accumsan magna aliqua.</p>
+                        </div>
+                     </li>
+                     <li class="blog__item item-blog">
+                        <a href="/blog-item2.html" class="item-blog__image">
+                           <img src="@img/blog/blog2.webp" alt="blog1" />
+                        </a>
+                        <div class="item-blog__content">
+                           <a href="/blog-item2.html">
+                              <h3>5 Stand-out Features of Branding You Should Know</h3>
+                           </a>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore accumsan magna aliqua.</p>
+                        </div>
+                     </li>
+                     <li class="blog__item item-blog">
+                        <a href="/blog-item3.html" class="item-blog__image">
+                           <img src="@img/blog/blog3.webp" alt="blog3" />
+                        </a>
+                        <div class="item-blog__content">
+                           <a href="/blog-item3.html">
+                              <h3>Branding: What Real Customers Have to Say</h3>
+                           </a>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore accumsan magna aliqua.</p>
+                        </div>
+                     </li>
+                     <li class="blog__item item-blog">
+                        <a href="/blog-item4.html" class="item-blog__image">
+                           <img src="@img/blog/blog4.webp" alt="blog4" />
+                        </a>
+                        <div class="item-blog__content">
+                           <a href="/blog-item4.html">
+                              <h3>Branding: Pros and Cons They Don't Tell You</h3>
+                           </a>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore accumsan magna aliqua.</p>
+                        </div>
+                     </li>
+                     <li class="blog__item item-blog">
+                        <a href="/blog-item5.html" class="item-blog__image">
+                           <img src="@img/blog/blog6.webp" alt="blog6" />
+                        </a>
+                        <div class="item-blog__content">
+                           <a href="/blog-item5.html">
+                              <h3>How Much Should I Spend on Branding?</h3>
+                           </a>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore accumsan magna aliqua.</p>
+                        </div>
+                     </li>
+                     <li class="blog__item item-blog">
+                        <a href="/blog-item6.html" class="item-blog__image">
+                           <img src="@img/blog/blog5.webp" alt="blog5" />
+                        </a>
+                        <div class="item-blog__content">
+                           <a href="/blog-item6.html">
+                              <h3>How to Spot the Best Branding for You</h3>
+                           </a>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore accumsan magna aliqua.</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <section class="project-page-letter letter">
+               <div class="letter__container">
+                  <div class="letter__content">
+                     <div class="letter__content-label label">newsletter</div>
+                     <h2 class="letter__content-head headerTitle_2">Get the latest news into your inbox</h2>
+                  </div>
+                  <form action="submit" class="letter__form">
+                     <input type="email" placeholder="Your email" />
+                     <button>subscribe</button>
+                  </form>
+               </div>
+            </section>
+         </main>
+         @@include('html/_footer.htm',{})
+      </div>
+      @@include('html/_js.htm',{})
+   </body>
+</html>

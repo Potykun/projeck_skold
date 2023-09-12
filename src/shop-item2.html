@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('html/_head.htm',{ "title":"Shop item 1" })
+
+   <body>
+      <div class="wrapper">
+         @@include('html/_header.htm',{})
+         <main class="page">
+            <section class="magazine">
+               <div class="magazine__container">
+                  <div class="magazine__image">
+                     <img src="@img/shop/shop12.webp" alt="image-shop" />
+                     <img src="@img/shop/shop11.webp" alt="image-shop" />
+                  </div>
+                  <div class="magazine__description description-magazine">
+                     <div class="description-magazine__cnt">
+                        <div class="description-magazine__price">$ 29.00 USD <span>$ 19.00 USD</span></div>
+                        <h2 class="description-magazine__header">Brand Magazine #2</h2>
+                        <p class="description-magazine__descript">Nibh sed pulvinar proin gravida hendrerit lectus a. Consequat mauris nunc congue nisi vitae.</p>
+                        <input class="description-magazine__inp" type="number" value="1" />
+                        <div class="description-magazine__button">add to card</div>
+                        <div class="description-magazine__content">
+                           <h2>Hendrerit dolor magna</h2>
+                           <p>
+                              Tristique sollicitudin nibh sit amet commodo. Sit amet justo donec enim diam vulputate ut pharetra. Quis imperdiet massa tincidunt nunc pulvinar
+                              sapien et ligula ullamcorper. Massa vitae tortor condimentum lacinia quis vel. Hendrerit dolor magna eget est lorem ipsum dolor. Mollis aliquam ut
+                              porttitor leo a diam sollicitudin tempor id. Suspendisse faucibus interdum posuere.
+                           </p>
+                           <ul>
+                              <li>olor sed viverra</li>
+                              <li>Eget loreE get lorem dsed viverra</li>
+                              <li>EEget lorem drem dolerra</li>
+                              <li>Eget lorem dolor sed viverra</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="faq">
+               <div class="faq__container">
+                  <div class="faq__label">
+                     <div>faq</div>
+                     <h3>Common Questions</h3>
+                  </div>
+                  <ul class="faq__spoilers-cnt">
+                     <li data-spollers class="spollers">
+                        <button type="button" data-spoller class="spollers__title">
+                           Integer vitae justo magna?
+                           <div class="title-spollers__x">
+                              <span class="title-spollers__x--1"></span>
+                              <span class="title-spollers__x--2"></span>
+                           </div>
+                        </button>
+                        <div class="spollers__body">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem
+                              ipsum dolor. Consequat nisl vel pretium lectus quam id. Mattis enim ut tellus elementum.
+                           </p>
+                        </div>
+                     </li>
+                     <li data-spollers class="spollers">
+                        <button type="button" data-spoller class="spollers__title">
+                           Dolor magna eget est lorem?
+                           <div class="title-spollers__x">
+                              <span class="title-spollers__x--1"></span>
+                              <span class="title-spollers__x--2"></span>
+                           </div>
+                        </button>
+                        <div class="spollers__body">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem
+                              ipsum dolor. Consequat nisl vel pretium lectus quam id. Mattis enim ut tellus elementum.
+                           </p>
+                        </div>
+                     </li>
+                     <li data-spollers class="spollers">
+                        <button type="button" data-spoller class="spollers__title">
+                           Ac tincidunt vitae semper?
+                           <div class="title-spollers__x">
+                              <span class="title-spollers__x--1"></span>
+                              <span class="title-spollers__x--2"></span>
+                           </div>
+                        </button>
+                        <div class="spollers__body">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem
+                              ipsum dolor. Consequat nisl vel pretium lectus quam id. Mattis enim ut tellus elementum.
+                           </p>
+                        </div>
+                     </li>
+                     <li data-spollers class="spollers">
+                        <button type="button" data-spoller class="spollers__title">
+                           Sagittis orci a scelerisque?
+                           <div class="title-spollers__x">
+                              <span class="title-spollers__x--1"></span>
+                              <span class="title-spollers__x--2"></span>
+                           </div>
+                        </button>
+                        <div class="spollers__body">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem
+                              ipsum dolor. Consequat nisl vel pretium lectus quam id. Mattis enim ut tellus elementum.
+                           </p>
+                        </div>
+                     </li>
+                     <li data-spollers class="spollers">
+                        <button type="button" data-spoller class="spollers__title">
+                           Dolor magna eget est ipsum?
+                           <div class="title-spollers__x">
+                              <span class="title-spollers__x--1"></span>
+                              <span class="title-spollers__x--2"></span>
+                           </div>
+                        </button>
+                        <div class="spollers__body">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem
+                              ipsum dolor. Consequat nisl vel pretium lectus quam id. Mattis enim ut tellus elementum.
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <section class="project-page-letter letter">
+               <div class="letter__container">
+                  <div class="letter__content">
+                     <div class="letter__content-label label">newsletter</div>
+                     <h2 class="letter__content-head headerTitle_2">Get the latest news into your inbox</h2>
+                  </div>
+                  <form action="submit" class="letter__form">
+                     <input type="email" placeholder="Your email" />
+                     <button>subscribe</button>
+                  </form>
+               </div>
+            </section>
+         </main>
+         @@include('html/_footer.htm',{})
+      </div>
+      @@include('html/_js.htm',{})
+   </body>
+</html>

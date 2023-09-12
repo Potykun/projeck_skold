@@ -1,0 +1,215 @@
+.experience {
+   // .experience__container
+
+   &__container {
+      display: flex;
+      border-bottom: 1px solid #000;
+      @media (max-width: $mobile) {
+         flex-direction: column;
+      }
+   }
+
+   // .experience__head
+
+   &__head {
+      flex: 0 1 50%;
+      border-right: 1px solid #000;
+   }
+
+   // .experience__list
+
+   &__list {
+      flex: 0 1 50%;
+   }
+
+   // .experience__item
+
+   &__item {
+      &:not(:last-child) {
+         border-bottom: 1px solid #000;
+      }
+   }
+}
+.head-experience {
+   padding: rem(48);
+   display: flex;
+   flex-direction: column;
+   @media (max-width: $tablet) {
+      padding: rem(36);
+   }
+   @media (max-width: $mobile) {
+      border-bottom: 1px solid #000;
+   }
+   // .head-experience__label
+
+   &__label {
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      letter-spacing: rem(1);
+      text-transform: uppercase;
+      margin-bottom: rem(16);
+      font-family: "roboto mono";
+   }
+
+   // .head-experience__text
+
+   &__text {
+      margin-bottom: rem(32);
+      font-weight: 300;
+      font-family: "manrope";
+      font-size: rem(32);
+      line-height: math.div(48, 32);
+      flex: 1 1 auto;
+      @media (max-width: em(1000)) {
+         font-size: rem(24);
+         line-height: math.div(36, 24);
+      }
+   }
+   &__image {
+      max-width: rem(80);
+   }
+}
+.item-experience {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: rem(48);
+   padding: rem(48);
+
+   @media (max-width: $tablet) {
+      padding: rem(32);
+      flex-direction: column;
+      align-items: start;
+   }
+   // .item-experience__label
+
+   &__label {
+      h3 {
+         font-family: "manrope";
+         font-size: rem(24);
+         line-height: math.div(34, 24);
+         letter-spacing: rem(1);
+         text-transform: uppercase;
+      }
+      p {
+         font-size: rem(13);
+         line-height: math.div(18, 13);
+         letter-spacing: rem(1);
+         text-transform: uppercase;
+         margin-bottom: rem(16);
+         font-family: "roboto mono";
+      }
+   }
+
+   // .item-experience__data
+
+   &__data {
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      letter-spacing: rem(1);
+      text-transform: uppercase;
+      margin-bottom: rem(16);
+      font-family: "roboto mono";
+   }
+}
+//=================== awards ===================
+.awards {
+   // .awards__container
+
+   &__container {
+      display: flex;
+      border-bottom: 1px solid #000;
+      @media (max-width: $mobile) {
+         flex-direction: column;
+      }
+   }
+
+   // .awards__head
+
+   &__head {
+      flex: 0 1 50%;
+      padding: rem(48);
+      display: flex;
+      flex-direction: column;
+      @media (max-width: $tablet) {
+         padding: rem(32);
+      }
+   }
+
+   // .awards__list
+
+   &__list {
+      flex: 0 1 50%;
+   }
+
+   // .awards__item
+
+   &__item {
+   }
+}
+.head-awards {
+   // .head-awards__label
+   border-right: 1px solid #000;
+   @media (max-width: $mobile) {
+      border-right: 0px solid #000;
+      border-bottom: 1px solid #000;
+   }
+
+   &__label {
+      flex: 1 1 auto;
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      letter-spacing: rem(1);
+      text-transform: uppercase;
+      margin-bottom: rem(16);
+      font-family: "roboto mono";
+   }
+
+   // .head-awards__text
+
+   &__text {
+      font-size: rem(48);
+      line-height: math.div(58, 48);
+      font-family: "manrope";
+      max-width: rem(350);
+   }
+}
+.item-award {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: rem(48);
+   &:not(:last-child) {
+      border-bottom: 1px solid #000;
+   }
+   @media (max-width: $tablet) {
+      padding: rem(32);
+      flex-direction: column;
+      align-items: start;
+   }
+   // .item-award__content
+
+   &__content {
+      display: flex;
+      align-items: start;
+      gap: rem(32);
+      @media (max-width: $tablet) {
+         flex-direction: column;
+         margin-bottom: rem(16);
+      }
+
+      & img {
+         max-width: rem(40);
+      }
+      p {
+         font-size: rem(24);
+         line-height: math.div(34, 24);
+         text-transform: uppercase;
+      }
+   }
+
+   // .item-award__data
+
+   &__data {
+   }
+}

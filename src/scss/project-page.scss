@@ -1,0 +1,144 @@
+//=================== project-page ===================
+//=================== main ===================
+
+.project-page {
+   // .project-page__main
+
+   &__main {
+   }
+}
+.main-project-page {
+   // .main-project-page__container
+
+   &__container {
+      padding: rem(48);
+      border-bottom: 1px solid #000;
+      p {
+         max-width: rem(650);
+      }
+      @media (max-width: $tablet) {
+         padding: rem(36);
+      }
+   }
+}
+//=================== categorien ===================
+
+.project-page {
+   // .project-page__categor
+
+   &__categor {
+   }
+}
+.categor-project-page {
+   // .categor-project-page__container
+
+   &__container {
+      text-transform: uppercase;
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      display: grid;
+      grid-template-columns: 1fr auto auto auto auto;
+      border-bottom: 1px solid #000;
+      @media (max-width: $mobileSmall) {
+         grid-template-columns: auto auto auto;
+         & :first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border-bottom: 1px solid #000;
+         }
+      }
+   }
+
+   // .categor-project-page__item
+
+   &__item {
+      padding: rem(16);
+      @media (max-width: $mobileSmall) {
+         text-align: center;
+      }
+      &:not(:last-child) {
+         border-right: 1px solid #000;
+      }
+   }
+}
+//=================== projcts-image ===================
+
+.project-page {
+   // .project-page__projects
+
+   &__projects {
+   }
+}
+.prog-project-page {
+   // .prog-project-page__container
+
+   &__container {
+   }
+
+   // .prog-project-page__list
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: rem(1);
+      background-color: #000;
+      @media (max-width: $mobile) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+
+   // .prog-project-page__item
+
+   &__item {
+      position: relative;
+      border-bottom: 1px solid #000;
+      overflow: hidden;
+      @media (max-width: $mobile) {
+         max-height: 100vh;
+      }
+      a {
+         img {
+            max-width: 100%;
+            object-fit: cover;
+         }
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            div {
+               transition: all 0.3s ease 0s;
+               bottom: rem(0);
+            }
+         }
+      }
+      img {
+         max-width: 100%;
+         object-fit: cover;
+      }
+      div {
+         position: absolute;
+         width: 100%;
+         bottom: rem(-50);
+         left: 0;
+         background-color: #f8f8f8;
+         padding: rem(16);
+         border-top: 1px solid #000;
+         transition: all 0.3s ease 0s;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      span {
+      }
+      img {
+      }
+      @media (max-width: em(1000)) {
+         div {
+            bottom: rem(0);
+         }
+      }
+   }
+}
+//=================== contacts ===================
+.project-page-contact {
+   border-bottom: 1px solid #000;
+}

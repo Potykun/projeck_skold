@@ -1,0 +1,97 @@
+.blog {
+   // .blog__list
+
+   &__list {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      @media (max-width: $tablet) {
+         grid-template-columns: repeat(2, auto);
+      }
+      @media (max-width: $mobile) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   // .blog__item
+
+   &__item {
+   }
+}
+.item-shop {
+   // .item-shop__image
+   a {
+      .item-shop__image {
+         position: relative;
+         &--sale {
+            & ~ :nth-child(n) {
+               .item-shop__price--old {
+                  display: block;
+               }
+            }
+            &::before {
+               content: " +++ sale +++ sale +++ sale";
+               text-align: center;
+               position: absolute;
+               width: 100%;
+               height: rem(30);
+               padding: rem(8);
+               text-transform: uppercase;
+               font-size: rem(12);
+               line-height: math.div(16, 12);
+               font-family: "roboto mono";
+               bottom: 0;
+               left: 0;
+               border-top: 1px solid #000;
+               background-color: $ColorYellow;
+            }
+         }
+         img {
+            width: 100%;
+            height: rem(300);
+            object-fit: cover;
+         }
+      }
+   }
+
+   // .item-shop__describe
+
+   &__describe {
+      border-top: 1px solid #000;
+      padding: rem(32);
+      text-transform: uppercase;
+      font-family: "roboto mono";
+      font-size: rem(15);
+      line-height: math.div(28, 15);
+   }
+
+   // .item-shop__price
+
+   &__price {
+      display: flex;
+      font-family: "roboto mono";
+      font-size: rem(13);
+      line-height: math.div(18, 13);
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: rem(8);
+   }
+
+   // .item-shop__price--new
+
+   &__price--new {
+   }
+
+   // .item-shop__price--old
+
+   &__price--old {
+      text-decoration: line-through;
+      padding-left: rem(5);
+      display: none;
+   }
+
+   // .item-shop__text
+
+   &__text {
+   }
+}
